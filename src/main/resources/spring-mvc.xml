@@ -19,7 +19,9 @@
     <context:component-scan base-package="com.liyuhang.controller" />
 
     <!-- 完成请求和注解POJO的映射 -->
-    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+    <!-- org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter 已经废弃-->
+    <!-- 最新使用 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" />
 
     <!-- 对转向页面的路径解析。prefix：前缀， suffix：后缀 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
