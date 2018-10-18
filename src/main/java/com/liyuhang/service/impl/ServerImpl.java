@@ -15,7 +15,8 @@ public class ServerImpl implements UserService
 
     public List<User> getUsers()
     {
-
+        User user = new User();
+        String name = user.getName();
         return null;
     }
 

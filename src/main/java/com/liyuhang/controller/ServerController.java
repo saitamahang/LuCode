@@ -13,8 +13,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @since 2018/07/24
  */
 @Controller
-@RequestMapping
+@RequestMapping("/home")
 public class ServerController
 {
+    @RequestMapping("/")
+    String get()
+    {
+        // mapped to hostname:port/home/
+        System.out.println("hello" + "");
+        return "Hello";
+    }
 
+    @RequestMapping("/index")
+    String index()
+    {
+        // mapped to hostname:port/home/index/
+        return "Hello from index";
+    }
+
+    @RequestMapping("/new")
+    public void none()
+    {
+        System.out.println("springMVC" + "");
+    }
 }
