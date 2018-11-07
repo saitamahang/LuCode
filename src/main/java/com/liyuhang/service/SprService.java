@@ -16,6 +16,7 @@ public class SprService
     @Path("test")
     public void test()
     {
+        System.out.println("git commit test");
         System.out.println("++++++++++++++test++++++++++++++++");
     }
 }
