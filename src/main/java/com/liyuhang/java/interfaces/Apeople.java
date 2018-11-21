@@ -56,3 +56,37 @@ class Achild implements Chinese
 
     }
 }
+
+
+class Afather
+{
+    public void speakChinese()
+    {
+        // TODO Auto-generated method stub
+
+    }
+}
+
+
+class Ababy extends Afather implements Teacher, Chinese
+{
+    /*
+     * //若继承的父类中与实现接口中的方法重名，则子类非必复写接口方法
+     * @Override public void speakChinese() { // TODO Auto-generated method stub
+     * super.speakChinese(); }
+     */
+
+    @Override
+    public void sameMethodTest()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void teaching()
+    {
+        // TODO Auto-generated method stub
+
+    }
+}
