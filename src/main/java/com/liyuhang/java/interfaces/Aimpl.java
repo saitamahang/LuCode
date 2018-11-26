@@ -70,10 +70,12 @@ public class Aimpl
     public static void main(String[] args)
     {
         Hero h = new Hero();
-        //java自动向上转型
+        // java自动向上转型
         t(h);
         u(h);
         v(h);
         w(h);
+
+        System.out.println(Chinese.CHINESEPEOPLE + " & " + Chinese.CHINANAME);
     }
 }
