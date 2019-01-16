@@ -25,5 +25,20 @@ public class TypeCounter extends HashMap<Class<?>, Integer>
     {
         // TODO Auto-generated constructor stub
         this.baseType = baseType;
+        get(String.class);
+    }
+
+    public void count()
+    {
+        put(String.class, 1);
+    }
+
+    public static void main(String[] args)
+    {
+        // put(String, 1);
+        Object obj = String.class;
+        Object obj1 = Object.class;
+        Object obj2 = Class.class;
+
     }
 }
