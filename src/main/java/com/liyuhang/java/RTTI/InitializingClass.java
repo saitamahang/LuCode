@@ -1,7 +1,7 @@
 /**
  * 
  */
-package liyuhang.java.RTTI;
+package com.liyuhang.java.RTTI;
 
 
 import java.util.Random;
