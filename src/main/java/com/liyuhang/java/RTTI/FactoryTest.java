@@ -21,6 +21,7 @@ public class FactoryTest
         // new son1.Factory();
     }
 
+    @SuppressWarnings("static-access")
     public static void main(String[] args)
     {
         for (Factory<? extends foo> factory : new foo().sonArray)
