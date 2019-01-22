@@ -9,7 +9,7 @@ package com.liyuhang.java.RTTI;
  * @author LiYuHang
  * @date 2019年1月21日
  */
-public interface Factory
+public interface Factory<T>
 {
-
+    T create();
 }
