@@ -10,6 +10,8 @@ import java.lang.reflect.Proxy;
 
 
 /**
+ * 动态代理简单实现
+ * 
  * @author LiYuHang
  * @date 2019年1月28日
  */
@@ -58,7 +60,7 @@ public class SimpleDynamicProxy
     public static void main(String[] args)
     {
         ProxyInterface proxyInterface = (ProxyInterface)Proxy.newProxyInstance(
-            SimpleDynamicProxy.class.getClassLoader(), new Class[] {SimpleDynamicProxy.class},
+            ProxyInterface.class.getClassLoader(), new Class[] {ProxyInterface.class},
             new DynamicProxyHandler(new realObject()));
 
         proxyInterface.methodOne();
