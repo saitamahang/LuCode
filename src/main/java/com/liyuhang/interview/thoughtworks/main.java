@@ -12,7 +12,16 @@ public class main
     public static void main(String[] args)
     {
         Graph graph = Graph.getInstance();
-        graph.search("A", "C");
+        try
+        {
+            graph.search("B", "B");
+        }
+        catch (Exception e)
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        //graph.searchBaseDistance("C", "C", "", 30);
         graph.getRouteList();
         System.out.println(graph.getRouteList());
     }

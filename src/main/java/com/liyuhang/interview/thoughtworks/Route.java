@@ -4,12 +4,21 @@
 package com.liyuhang.interview.thoughtworks;
 
 /**
+ * Route related class
  * @author LiYuHang
  * @date 2019年4月21日
  */
-public class Route
+public class Route implements Comparable<Route>
 {
-    public String path;
+    /**
+     * route
+     */
+    private String path;
+    
+    /**
+     * distance
+     */
+    private String distance;
 
     /**
      * @return the path
@@ -38,4 +47,28 @@ public class Route
         // TODO Auto-generated method stub
         return this.path;
     }
+
+    public String getDistance()
+    {
+        return distance;
+    }
+
+    public void setDistance(String distance)
+    {
+        this.distance = distance;
+    }
+
+    /*
+     * (non-Javadoc)
+     * @see java.lang.Comparable#compareTo(java.lang.Object)
+     */
+    @Override
+    public int compareTo(Route o)
+    {
+        // TODO Auto-generated method stub
+
+        return Integer.parseInt(this.distance)
+               - (o.getDistance().isEmpty() ? 0 : Integer.parseInt(o.getDistance()));
+    }
+
 }
