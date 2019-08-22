@@ -36,6 +36,9 @@ public class Graph
     
     public static final int ONESTEP = 2;
 
+    /**
+     * 坐标数据
+     */
     public static int[][] mapData = {
         {0, 5, 0, 5, 7},
         {0, 0, 4, 0, 0},
@@ -225,6 +228,13 @@ public class Graph
         return -1;
     }
     
+    /**
+     * 获取字符串
+     * 
+     * @param str
+     *            字符数组
+     * @return string
+     */
     private static String getString(String[] str)
     {
         StringBuilder sb = new StringBuilder();
