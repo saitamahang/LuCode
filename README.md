@@ -1,2 +1,2 @@
-# javaweb
+# java practical
 
