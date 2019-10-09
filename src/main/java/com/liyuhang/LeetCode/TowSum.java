@@ -1,5 +1,9 @@
 package com.liyuhang.LeetCode;
 
+/**
+ * @author LiYuHang
+ * @date 2019年10月09日
+ */
 public class TowSum {
     public static void main(String[] args) {
         int test[] = {1,2,3,4,5,6,7,8};
