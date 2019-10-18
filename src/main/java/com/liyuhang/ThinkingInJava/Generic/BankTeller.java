@@ -1,6 +1,5 @@
 package com.liyuhang.ThinkingInJava.Generic;
 
-import com.liyuhang.ThinkingInJava.Generic.Common.Generator;
 import com.liyuhang.ThinkingInJava.Generic.Common.Generators;
 import com.liyuhang.ThinkingInJava.Generic.Model.Customer;
 import com.liyuhang.ThinkingInJava.Generic.Model.Teller;
