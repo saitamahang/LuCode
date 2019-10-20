@@ -46,6 +46,9 @@ class Shelf extends ArrayList<Product> {
     }
 }
 
+/**
+ * 通道
+ */
 class Aisle extends ArrayList<Shelf>{
     public Aisle(int nShelves, int nProducts) {
         for (int i = 0; i < nShelves; i++){
