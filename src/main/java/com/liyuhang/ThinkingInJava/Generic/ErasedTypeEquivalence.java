@@ -12,4 +12,9 @@ public class ErasedTypeEquivalence {
         //类型参数被擦除，在泛型外部无法区分类型参数
         System.out.println(c1 == c2);
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
