@@ -15,7 +15,7 @@ class Product{
         id = IDnumber;
         description = descr;
         price = priceIn;
-        System.out.println("toString");
+        System.out.println(toString());
     }
 
     @Override
@@ -50,6 +50,11 @@ class Shelf extends ArrayList<Product> {
  * 通道
  */
 class Aisle extends ArrayList<Shelf>{
+    /**
+     * 通道上货
+     * @param nShelves 货架数
+     * @param nProducts 货架货物数
+     */
     public Aisle(int nShelves, int nProducts) {
         for (int i = 0; i < nShelves; i++){
             add(new Shelf(nProducts));
