@@ -6,11 +6,20 @@ import com.liyuhang.ThinkingInJava.Generic.Common.Generators;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * 货品实体类
+ */
 class Product{
     private final int id;
     private String description;
     private double price;
 
+	/**
+	 * 构造
+	 * @param IDnumber 货号
+	 * @param descr 描述
+	 * @param priceIn 价格
+ 	 */
     public Product(int IDnumber, String descr, double priceIn) {
         id = IDnumber;
         description = descr;
