@@ -11,6 +11,15 @@ public class GenericIntegerTest {
             // 此处会走到异常分支，因为Animal没有默认(无参)构造
             System.out.println("ClassAsFactory<Animal> failed!");
         }
+
+        //书上的例子是Integer
+        try {
+            ClassAsFactory<Integer> a = new ClassAsFactory<Integer>(Integer.class);
+            System.out.println("ClassAsFactory<Integer> succeeded!");
+        } catch (Exception e){
+            // 此处会走到异常分支，因为Animal没有默认(无参)构造
+            System.out.println("ClassAsFactory<Integer> failed!");
+        }
     }
 }
 
