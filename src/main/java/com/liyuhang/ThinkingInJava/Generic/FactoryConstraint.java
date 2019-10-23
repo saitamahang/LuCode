@@ -10,3 +10,7 @@ public class FactoryConstraint {
 interface FactoryI<T>{
     T creat();
 }
+
+class Foo2{
+
+}
