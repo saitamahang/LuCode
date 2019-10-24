@@ -17,3 +17,13 @@ class Foo2<T>{
         x = factory.creat();
     }
 }
+
+class IntegerFactory implements FactoryI<Integer>{
+
+    @Override
+    public Integer creat() {
+        return null;
+    }
+}
+
+
