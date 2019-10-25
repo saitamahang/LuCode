@@ -4,7 +4,10 @@ package com.liyuhang.ThinkingInJava.Generic;
  * 工厂测试
  */
 public class FactoryConstraint {
-
+    public static void main(String[] args) {
+        new Foo2<Integer>(new IntegerFactory());
+        new Foo2<Widget>(new Widget.Factory());
+    }
 }
 
 interface FactoryI<T>{
@@ -22,7 +25,16 @@ class IntegerFactory implements FactoryI<Integer>{
 
     @Override
     public Integer creat() {
-        return null;
+        return new Integer(0);
+    }
+}
+
+class Widget{
+    public static class Factory implements FactoryI<Widget>{
+        @Override
+        public Widget creat() {
+            return new Widget();
+        }
     }
 }
 
