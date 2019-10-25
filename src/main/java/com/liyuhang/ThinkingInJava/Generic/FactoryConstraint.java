@@ -16,6 +16,7 @@ interface FactoryI<T>{
 
 class Foo2<T>{
     private T x;
+    // Foo2的构造返回值 F 所属 FactoryI<T> 接口工厂制造出来的类
     public <F extends FactoryI<T>> Foo2(F factory){
         x = factory.creat();
     }
