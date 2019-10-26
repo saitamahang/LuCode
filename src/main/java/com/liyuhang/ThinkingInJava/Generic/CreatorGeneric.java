@@ -7,3 +7,16 @@ public abstract class CreatorGeneric<T> {
     }
     abstract T creat();
 }
+
+class X {}
+
+class  creator extends CreatorGeneric<X>{
+
+    @Override
+    X creat() {
+        return new X();
+    }
+    void  f(){
+        System.out.println(element.getClass().getSimpleName());
+    }
+}
