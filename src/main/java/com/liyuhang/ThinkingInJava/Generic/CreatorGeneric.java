@@ -1,16 +1,16 @@
 package com.liyuhang.ThinkingInJava.Generic;
 
 public abstract class CreatorGeneric<T> {
-    final T element;
-    public CreatorGeneric(){
-        this.element = creat();
+
+    public static void main(String[] args) {
+        Creator c = new Creator();
+        c.f();
     }
-    abstract T creat();
 }
 
 class X {}
 
-class  creator extends CreatorGeneric<X>{
+class Creator extends GenericWithCreat<X>{
 
     @Override
     X creat() {
@@ -19,4 +19,11 @@ class  creator extends CreatorGeneric<X>{
     void  f(){
         System.out.println(element.getClass().getSimpleName());
     }
+}
+abstract class GenericWithCreat<T> {
+    final T element;
+    public GenericWithCreat(){
+        this.element = creat();
+    }
+    abstract T creat();
 }
