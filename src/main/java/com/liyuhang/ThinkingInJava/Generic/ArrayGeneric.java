@@ -9,6 +9,8 @@ public class ArrayGeneric {
         gia = (Generic<Integer>[])new Generic[SIZE];
         System.out.println(gia.getClass().getSimpleName());
         gia[0] = new Generic<Integer>();
+        //! gia[1] = new Object();
+        //! gia[2] = new Generic<>(Double);
     }
 }
 
