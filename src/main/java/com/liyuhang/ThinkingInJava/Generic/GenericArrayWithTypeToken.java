@@ -24,5 +24,6 @@ public class GenericArrayWithTypeToken<T> {
         Integer[] ia = gai.rep();
         int i = 1;
         gai.get(i);
+        gai.put(2, 3);
     }
 }
