@@ -20,3 +20,20 @@ public class Colored<T extends HasColor> {
 interface HasColor{
     java.awt.Color getColor();
 }
+
+class Dimension {public int x,y,z;}
+
+/**
+ * 返回两种不同类型
+ * @param <T>
+ */
+class ColoredDimension<T extends Dimension & HasColor> {
+    T item;
+    ColoredDimension(T item){this.item = item;}
+    T getItem(){return item;}
+    // 返回两种不同类型
+    java.awt.Color color(){return item.getColor();}
+    int getX(){return item.x;}
+    int getY(){return item.y;}
+    int getZ(){return item.z;}
+}
