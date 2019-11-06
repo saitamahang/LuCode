@@ -37,3 +37,6 @@ class ColoredDimension<T extends Dimension & HasColor> {
     int getY(){return item.y;}
     int getZ(){return item.z;}
 }
+//class Stringtest extends String {
+//
+//}
