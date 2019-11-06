@@ -21,7 +21,7 @@ interface HasColor{
     java.awt.Color getColor();
 }
 
-class Dimension {public int x,y,z;}
+class Dimension {public int x,y,z,w;}
 
 /**
  * 返回两种不同类型
@@ -36,6 +36,7 @@ class ColoredDimension<T extends Dimension & HasColor> {
     int getX(){return item.x;}
     int getY(){return item.y;}
     int getZ(){return item.z;}
+    int getW(){return item.w;}
 }
 //class Stringtest extends String {
 //
