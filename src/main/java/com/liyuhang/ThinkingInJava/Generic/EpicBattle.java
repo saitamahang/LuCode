@@ -25,3 +25,16 @@ class SuperHero<POWER extends SuperPower>{
         return power;
     }
 }
+
+/**
+ * 千里眼
+ * @param <POWER> 超能力
+ */
+class SuperSleuth<POWER extends XRayVision> extends SuperHero<POWER>{
+    public SuperSleuth(POWER power){
+        super(power);
+    }
+    void see(){
+        power.seeThtoughWalls();
+    }
+}
