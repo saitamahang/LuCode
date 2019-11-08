@@ -38,6 +38,11 @@ class SuperSleuth<POWER extends XRayVision> extends SuperHero<POWER>{
         power.seeThtoughWalls();
     }
 }
+
+/**
+ *
+ * @param <POWER>
+ */
 class CanineHero<POWER extends SuperHearing & SuperSmell> extends SuperHero<POWER>{
     public CanineHero(POWER power){
         super(power);
@@ -48,4 +53,9 @@ class CanineHero<POWER extends SuperHearing & SuperSmell> extends SuperHero<POWE
     void smell(){
         power.trackBySmell();
     }
+}
+
+class SuperMearSmell implements SuperHearing, SuperSmell{
+    public void hearSubtleNoises(){}
+    public void trackBySmell(){}
 }
