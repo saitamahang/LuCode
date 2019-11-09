@@ -58,4 +58,9 @@ class CanineHero<POWER extends SuperHearing & SuperSmell> extends SuperHero<POWE
 class SuperMearSmell implements SuperHearing, SuperSmell{
     public void hearSubtleNoises(){}
     public void trackBySmell(){}
+
+    @Override
+    public void hearSubleNoise() {
+
+    }
 }
