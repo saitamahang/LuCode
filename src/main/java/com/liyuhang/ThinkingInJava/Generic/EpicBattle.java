@@ -4,6 +4,19 @@ package com.liyuhang.ThinkingInJava.Generic;
  * 泛型的超能力
  */
 public class EpicBattle {
+    static <POWER extends SuperHearing> void useSuperHearing(SuperHero<POWER> hero){
+        hero.getPower().hearSubleNoise();
+    }
+    static <POWER extends SuperHearing & SuperSmell> void useSuperFind(SuperHero<POWER> hero){
+        hero.getPower().hearSubleNoise();
+        hero.getPower().trackBySmell();
+    }
+
+    public static void main(String[] args) {
+        DogBoy dogBoy = new DogBoy();
+        useSuperHearing(dogBoy);
+        useSuperFind(dogBoy);
+    }
 }
 
 interface SuperPower{}
@@ -55,12 +68,17 @@ class CanineHero<POWER extends SuperHearing & SuperSmell> extends SuperHero<POWE
     }
 }
 
-class SuperMearSmell implements SuperHearing, SuperSmell{
-    public void hearSubtleNoises(){}
+class SuperHearSmell implements SuperHearing, SuperSmell{
     public void trackBySmell(){}
 
     @Override
     public void hearSubleNoise() {
 
+    }
+}
+
+class DogBoy extends CanineHero<SuperHearSmell>{
+    DogBoy(){
+        super(new SuperHearSmell());
     }
 }
